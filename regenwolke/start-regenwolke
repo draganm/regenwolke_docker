@@ -8,7 +8,7 @@ done
 hash -r
 
 case "$(basename $0)" in
-  start)
+  start-regenwolke)
     if [[ -f Procfile ]]; then
       command="$(ruby -e "require 'yaml';puts YAML.load_file('Procfile')['$1']")"
     else
