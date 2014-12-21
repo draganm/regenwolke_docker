@@ -20,4 +20,4 @@ case "$(basename $0)" in
     ;;
 esac
 
-$(eval echo ${command})
+${command}
