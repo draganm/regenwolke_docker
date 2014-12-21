@@ -1,6 +1,5 @@
 #!/bin/bash
 export HOME=/app
-chown -R u3861:u3861 /app
 cd /app
 
 for file in .profile.d/*.sh; do
@@ -21,4 +20,4 @@ case "$(basename $0)" in
     ;;
 esac
 
-setuidgid u3861 $(eval echo ${command})
+$(eval echo ${command})
