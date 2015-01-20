@@ -1,4 +1,4 @@
-FROM progrium/buildstep
+FROM dmilhdef/buildstep
 MAINTAINER Dragan Milic <dragan@netice9.com>
 RUN apt-get -y install nginx
 RUN mkdir /app
